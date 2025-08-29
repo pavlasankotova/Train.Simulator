@@ -60,27 +60,28 @@ Projekt je rozdělen do několika modulů (main.py, functions.py, classes.py, ob
 - functions.py - logika vykreslování, načítání map a pohybu vlaků (úlohy jednotlivých funkcí vysvětleny přímo v souboru)
 - classes.py - definuje ojektové třídy (Button a ImageButton)
 - objects.py - definuje konkrétní tlačítka pro všechny fáze hry
-- variables.p - obsahuje globální proměnné
+- variables.py - obsahuje globální proměnné
 
 ### Použité datové struktury a algoritmy
 
 Graf mapy
-- mapy železnic (kolejiste1.txt, kolejiste2.txt) jsou uloženy jako textové soubory. Při spuštění příslušné mapy se ukládají do matice a následně se převádejí na graf
-- uzly representují stanice, výhybky, zatáčky a křižovatky, hrany jsou tvořeny úseky vodorovných či svislých kolejí
+- mapy železnic (kolejiste1.txt, kolejiste2.txt) jsou uloženy jako textové soubory. Při spuštění příslušné mapy se ukládají do matice a následně se převádějí na graf
+- uzly reprezentují stanice, výhybky, zatáčky a křižovatky, hrany jsou tvořeny úseky vodorovných či svislých kolejí
 - graf slouží jako podklad pro pohyb vlaků
 
 Objektové třídy
 - jsou definovány obecné třídy Button a ImageButton (tlačítka textová a obrázková) a další třídy od nich odvozené (dědí jejich metody a  atributy, popř. realizuje další)
 - interaktivní prvky železnice a její segmenty jsou implementovány jako samostatné třídy (Switch a Light jsou odvozené z ImageButton):
-    Train - vlaky,
-    Segment - segment trati,
-    Switch - výhybky,
-    Light - návěstidla.
+    - Train - vlaky,
+    - Segment - segment trati,
+    - Switch - výhybky,
+    -Light - návěstidla.
 - každý objekt si uchovává svůj stav, díky čemuž se uskutečňuje interakce mezi objekty
 
 Soubory objektů 
-- vlaky jsou ukládány slovníku a pygame.sprite.Group(), což usnadňnuje jejich pohyb a vykreslování
+- vlaky jsou ukládány slovníku a pygame.sprite.Group(), což usnadňuje jejich pohyb a vykreslování
 
 Parsování mapy
-- kolejiště je načítano z externího textového souboru
+- kolejiště je načítáno z externího textového souboru
 - na základě použitých znaků se vytvářejí odpovídající objekty
+
