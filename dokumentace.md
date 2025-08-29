@@ -72,10 +72,10 @@ Graf mapy
 Objektové třídy
 - jsou definovány obecné třídy Button a ImageButton (tlačítka textová a obrázková) a další třídy od nich odvozené (dědí jejich metody a  atributy, popř. realizuje další)
 - interaktivní prvky železnice a její segmenty jsou implementovány jako samostatné třídy (Switch a Light jsou odvozené z ImageButton):
-    - Train - vlaky,
-    - Segment - segment trati,
-    - Switch - výhybky,
-    -Light - návěstidla.
+    - Train - vlaky
+    - Segment - segment trati
+    - Switch - výhybky
+    - Light - návěstidla
 - každý objekt si uchovává svůj stav, díky čemuž se uskutečňuje interakce mezi objekty
 
 Soubory objektů 
@@ -84,4 +84,5 @@ Soubory objektů
 Parsování mapy
 - kolejiště je načítáno z externího textového souboru
 - na základě použitých znaků se vytvářejí odpovídající objekty
+
 
